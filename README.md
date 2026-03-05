@@ -21,6 +21,7 @@ We formulate the inference-time integration of Optimal Transport (OT) Flow Match
    - [5. Inference & Evaluation](#5-inference--evaluation)
 4. [📊 Results](#-results)
 5. [🗂️ Repository Structure](#️-repository-structure)
+6. [🔬 Limitations & Future Work](#-limitations--future-work-constrained-rl)
 
 ---
 
@@ -166,3 +167,11 @@ _Full resolution PDF plots available in the [samples/](samples/) directory._
 │   └── misc.py               # Config loading & general helpers
 └── samples/                  # Visualized results (PDFs & PNGs)
 ```
+
+---
+
+## 🔬 Limitations & Future Work: Constrained RL
+
+Our failure analysis (see Technical Report) demonstrates that static, dense spatial penalties (MSE) heavily penalize the agent for finding alternative valid flow paths ("ghost trajectories"). This leads to structural distortions in the generated images.
+
+Future iterations of this codebase will replace the static Lagrangian penalty with a true Instantaneously Constrained Reinforcement Learning (ICRL) formulation, employing primal-dual augmented Lagrangian methods to enforce global trajectory constraints without destroying valid off-path exploration.
