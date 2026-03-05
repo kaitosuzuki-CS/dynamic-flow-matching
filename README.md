@@ -1,9 +1,9 @@
 # Dynamic Flow Matching: Learned Adaptive Discretization Policies for Flow Matching
 
 **Author:** Kaito Suzuki | UC Berkeley CS
-**Technical Report:** [report](https://drive.google.com/file/d/1tlEnViLA7Zd0EdySwHY_g4GIizI9iLks/view?usp=sharing)
+[[report](https://drive.google.com/file/d/1tlEnViLA7Zd0EdySwHY_g4GIizI9iLks/view?usp=sharing)]
 
-This repository contains the official PyTorch implementation of **Dynamic Flow Matching: Learned Adaptive Discretization Policies for Flow Matching via Constrained RL**.
+This repository contains the official PyTorch implementation of **Learned Adaptive Discretization Policies for Flow Matching via Constrained RL**.
 
 We formulate the inference-time integration of Optimal Transport (OT) Flow Matching models as a continuous-control Markov Decision Process (MDP). By training a Soft Actor-Critic (SAC) agent to dynamically predict the integration step size ($\Delta t$) based on the spatial features of the current state, we achieve a **20x wall-clock speedup** over classical fixed-step ODE solvers while maintaining equivalent statistical distribution fidelity (KID).
 
