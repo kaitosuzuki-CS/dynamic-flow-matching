@@ -113,3 +113,4 @@ lightning_logs/
 # User requested to keep (track) samples/ and results/
 # archive/ remains ignored as it was in the original file
 archive/
+data/
