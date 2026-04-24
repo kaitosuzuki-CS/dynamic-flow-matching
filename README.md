@@ -53,7 +53,7 @@ Training reinforcement learning agents on generative ODE trajectories typically 
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/kaitosuzuki-cs/DynamicFlowMatching.git
+git clone https://github.com/kaitosuzuki-CS/dynamic-flow-matching.git
 cd DynamicFlowMatching
 
 # Option A: Using Conda
